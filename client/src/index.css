@@ -40,77 +40,52 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  /* Custom Minecraft Colors */
+  --color-minecraft-grass: oklch(0.55 0.18 142);
+  --color-minecraft-dirt: oklch(0.45 0.08 55);
+  --color-minecraft-diamond: oklch(0.75 0.15 195);
+  --color-minecraft-emerald: oklch(0.65 0.2 155);
+  --color-minecraft-gold: oklch(0.8 0.18 85);
+  --color-minecraft-redstone: oklch(0.55 0.25 25);
+  --color-minecraft-ender: oklch(0.5 0.2 290);
+  --font-pixel: "DotGothic16", monospace;
+  --font-body: "Noto Sans JP", sans-serif;
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
-}
-
-.dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  --primary: oklch(0.55 0.18 142);
+  --primary-foreground: oklch(1 0 0);
+  --sidebar-primary: oklch(0.55 0.18 142);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --chart-1: oklch(0.55 0.18 142);
+  --chart-2: oklch(0.75 0.15 195);
+  --chart-3: oklch(0.65 0.2 155);
+  --chart-4: oklch(0.8 0.18 85);
+  --chart-5: oklch(0.5 0.2 290);
+  --radius: 0.25rem;
+  --background: oklch(0.15 0.02 280);
+  --foreground: oklch(0.95 0.01 90);
+  --card: oklch(0.2 0.02 280);
+  --card-foreground: oklch(0.95 0.01 90);
+  --popover: oklch(0.2 0.02 280);
+  --popover-foreground: oklch(0.95 0.01 90);
+  --secondary: oklch(0.25 0.02 280);
+  --secondary-foreground: oklch(0.9 0.01 90);
+  --muted: oklch(0.25 0.02 280);
+  --muted-foreground: oklch(0.7 0.02 280);
+  --accent: oklch(0.55 0.18 142);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.55 0.25 25);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.35 0.03 280);
+  --input: oklch(0.25 0.02 280);
+  --ring: oklch(0.55 0.18 142);
+  --sidebar: oklch(0.18 0.02 280);
+  --sidebar-foreground: oklch(0.95 0.01 90);
+  --sidebar-accent: oklch(0.25 0.02 280);
+  --sidebar-accent-foreground: oklch(0.95 0.01 90);
+  --sidebar-border: oklch(0.35 0.03 280);
+  --sidebar-ring: oklch(0.55 0.18 142);
 }
 
 @layer base {
@@ -119,6 +94,10 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    background-image: url('/images/command-bg.png');
+    background-repeat: repeat;
+    background-size: 300px;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -134,24 +113,11 @@
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -162,16 +128,149 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
     }
+  }
+
+  /* Minecraft-style pixel font for headings */
+  .font-pixel {
+    font-family: var(--font-pixel);
+  }
+
+  /* Minecraft block-style card */
+  .minecraft-card {
+    background: linear-gradient(135deg, oklch(0.35 0.06 55) 0%, oklch(0.28 0.05 55) 100%);
+    border: 4px solid oklch(0.25 0.04 55);
+    box-shadow: 
+      inset 2px 2px 0 oklch(0.45 0.06 55),
+      inset -2px -2px 0 oklch(0.2 0.04 55),
+      4px 4px 0 oklch(0.1 0.02 280);
+    image-rendering: pixelated;
+  }
+
+  /* Minecraft button style */
+  .minecraft-btn {
+    background: linear-gradient(180deg, oklch(0.5 0.02 280) 0%, oklch(0.35 0.02 280) 100%);
+    border: 3px solid;
+    border-color: oklch(0.6 0.02 280) oklch(0.25 0.02 280) oklch(0.25 0.02 280) oklch(0.6 0.02 280);
+    box-shadow: 2px 2px 0 oklch(0.1 0.01 280);
+    transition: all 0.1s ease;
+  }
+
+  .minecraft-btn:hover {
+    background: linear-gradient(180deg, oklch(0.55 0.02 280) 0%, oklch(0.4 0.02 280) 100%);
+  }
+
+  .minecraft-btn:active {
+    border-color: oklch(0.25 0.02 280) oklch(0.6 0.02 280) oklch(0.6 0.02 280) oklch(0.25 0.02 280);
+    transform: translate(2px, 2px);
+    box-shadow: none;
+  }
+
+  /* Copy button emerald style */
+  .copy-btn {
+    background: linear-gradient(180deg, oklch(0.65 0.2 155) 0%, oklch(0.5 0.18 155) 100%);
+    border: 3px solid;
+    border-color: oklch(0.75 0.2 155) oklch(0.4 0.15 155) oklch(0.4 0.15 155) oklch(0.75 0.2 155);
+    box-shadow: 2px 2px 0 oklch(0.1 0.01 280);
+    color: white;
+    font-weight: bold;
+    transition: all 0.1s ease;
+  }
+
+  .copy-btn:hover {
+    background: linear-gradient(180deg, oklch(0.7 0.22 155) 0%, oklch(0.55 0.2 155) 100%);
+    transform: scale(1.05);
+  }
+
+  .copy-btn:active {
+    border-color: oklch(0.4 0.15 155) oklch(0.75 0.2 155) oklch(0.75 0.2 155) oklch(0.4 0.15 155);
+    transform: translate(2px, 2px) scale(1);
+    box-shadow: none;
+  }
+
+  /* Enchant glow animation */
+  @keyframes enchant-glow {
+    0%, 100% {
+      box-shadow: 0 0 5px oklch(0.7 0.2 290), 0 0 10px oklch(0.6 0.2 290);
+    }
+    50% {
+      box-shadow: 0 0 15px oklch(0.8 0.25 290), 0 0 25px oklch(0.7 0.2 290);
+    }
+  }
+
+  .enchant-glow {
+    animation: enchant-glow 2s ease-in-out infinite;
+  }
+
+  /* Success copy animation */
+  @keyframes copy-success {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+      box-shadow: 0 0 20px oklch(0.8 0.25 155), 0 0 40px oklch(0.7 0.2 155);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .copy-success {
+    animation: copy-success 0.4s ease-out;
+  }
+
+  /* Command code block */
+  .command-block {
+    background: oklch(0.12 0.01 280);
+    border: 2px solid oklch(0.3 0.02 280);
+    font-family: 'Courier New', monospace;
+    color: oklch(0.85 0.2 155);
+  }
+
+  /* Category tab active state */
+  .category-tab-active {
+    background: linear-gradient(180deg, oklch(0.55 0.18 142) 0%, oklch(0.45 0.16 142) 100%);
+    border-color: oklch(0.65 0.18 142) oklch(0.35 0.14 142) oklch(0.35 0.14 142) oklch(0.65 0.18 142);
+  }
+
+  /* Floating animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Sparkle animation */
+  @keyframes sparkle {
+    0%, 100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate-sparkle {
+    animation: sparkle 1.5s ease-in-out infinite;
   }
 }

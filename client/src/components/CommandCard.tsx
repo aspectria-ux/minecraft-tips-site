@@ -5,7 +5,7 @@
  */
 
 import { useState } from 'react';
-import { Copy, Check, Sparkles, AlertTriangle } from 'lucide-react';
+import { Copy, Check, Sparkles, AlertTriangle, Monitor, Smartphone, Globe } from 'lucide-react';
 import type { Command } from '@/data/commands';
 import { toast } from 'sonner';
 
@@ -55,16 +55,43 @@ export function CommandCard({ command }: CommandCardProps) {
     }
   };
 
+  const getPlatformBadge = () => {
+    switch (command.platform) {
+      case 'java':
+        return (
+          <span className="px-2 py-0.5 text-xs font-pixel bg-orange-500/20 text-orange-400 border border-orange-500/30 flex items-center gap-1">
+            <Monitor className="w-3 h-3" />
+            Java版
+          </span>
+        );
+      case 'bedrock':
+        return (
+          <span className="px-2 py-0.5 text-xs font-pixel bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 flex items-center gap-1">
+            <Smartphone className="w-3 h-3" />
+            統合版
+          </span>
+        );
+      case 'both':
+        return (
+          <span className="px-2 py-0.5 text-xs font-pixel bg-slate-500/20 text-slate-400 border border-slate-500/30 flex items-center gap-1">
+            <Globe className="w-3 h-3" />
+            両対応
+          </span>
+        );
+    }
+  };
+
   return (
-    <div className="minecraft-card p-4 hover:scale-[1.02] transition-transform duration-200">
+    <div className="minecraft-card p-4 hover:scale-[1.02] transition-transform duration-200 h-full flex flex-col">
       {/* ヘッダー */}
       <div className="flex items-start justify-between gap-2 mb-3">
         <div className="flex-1">
-          <h3 className="font-pixel text-lg text-emerald-400 mb-1">
+          <h3 className="font-pixel text-base text-emerald-400 mb-1">
             {command.title}
           </h3>
           <div className="flex items-center gap-2 flex-wrap">
             {getDifficultyBadge()}
+            {getPlatformBadge()}
             {command.difficulty === 'hard' && (
               <span className="flex items-center gap-1 text-xs text-red-400">
                 <AlertTriangle className="w-3 h-3" />
@@ -76,7 +103,7 @@ export function CommandCard({ command }: CommandCardProps) {
       </div>
 
       {/* 説明 */}
-      <p className="text-sm text-gray-300 mb-4 leading-relaxed">
+      <p className="text-sm text-gray-300 mb-4 leading-relaxed flex-grow">
         {command.description}
       </p>
 
@@ -113,7 +140,7 @@ export function CommandCard({ command }: CommandCardProps) {
 
       {/* ヒント */}
       {command.tips && (
-        <div className="bg-purple-900/30 border border-purple-500/30 p-3 mt-3">
+        <div className="bg-purple-900/30 border border-purple-500/30 p-3 mt-auto">
           <div className="flex items-start gap-2">
             <Sparkles className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" />
             <p className="text-xs text-purple-300 leading-relaxed">

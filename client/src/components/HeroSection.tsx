@@ -7,7 +7,11 @@
 import { motion } from 'framer-motion';
 import { Sparkles, BookOpen, Zap } from 'lucide-react';
 
-export function HeroSection() {
+interface HeroSectionProps {
+  version?: string;
+}
+
+export function HeroSection({ version = '1.21' }: HeroSectionProps) {
   return (
     <section className="relative overflow-hidden py-8 md:py-12">
       {/* 背景画像 */}
@@ -61,7 +65,7 @@ export function HeroSection() {
           >
             <div className="flex items-center gap-2 px-3 py-2 bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 text-xs font-pixel">
               <BookOpen className="w-4 h-4" />
-              <span>30種類以上のコマンド</span>
+              <span>90種類以上のコマンド</span>
             </div>
             <div className="flex items-center gap-2 px-3 py-2 bg-yellow-500/20 border border-yellow-500/30 text-yellow-400 text-xs font-pixel">
               <Zap className="w-4 h-4" />
@@ -69,7 +73,7 @@ export function HeroSection() {
             </div>
             <div className="flex items-center gap-2 px-3 py-2 bg-purple-500/20 border border-purple-500/30 text-purple-400 text-xs font-pixel">
               <Sparkles className="w-4 h-4" />
-              <span>最新バージョン対応</span>
+              <span>バージョン {version} 対応</span>
             </div>
           </motion.div>
 
@@ -85,9 +89,10 @@ export function HeroSection() {
               使い方
             </h2>
             <ol className="text-xs text-gray-300 space-y-1">
-              <li>1. やりたいことを検索するか、カテゴリを選ぶ</li>
-              <li>2. 使いたいコマンドの「コピー」ボタンを押す</li>
-              <li>3. マイクラのチャット画面に貼り付けてEnter！</li>
+              <li>1. Java版か統合版を選ぶ</li>
+              <li>2. やりたいことを検索するか、カテゴリを選ぶ</li>
+              <li>3. 使いたいコマンドの「コピー」ボタンを押す</li>
+              <li>4. マイクラのチャット画面に貼り付けてEnter！</li>
             </ol>
           </motion.div>
         </motion.div>

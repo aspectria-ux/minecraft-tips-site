@@ -4,18 +4,19 @@
  * デザイン: ピクセルアート・レトロゲーム風
  */
 
-import { categories, type CommandCategory } from '@/data/commands';
+import { type CommandCategory, type Category } from '@/data/commands';
 import { motion } from 'framer-motion';
 
 interface CategoryTabsProps {
+  categories: Category[];
   activeCategory: CommandCategory;
   onCategoryChange: (category: CommandCategory) => void;
 }
 
-export function CategoryTabs({ activeCategory, onCategoryChange }: CategoryTabsProps) {
+export function CategoryTabs({ categories, activeCategory, onCategoryChange }: CategoryTabsProps) {
   return (
     <div className="w-full overflow-x-auto pb-2">
-      <div className="flex gap-2 min-w-max justify-center">
+      <div className="flex gap-2 min-w-max justify-center flex-wrap">
         {categories.map((category) => {
           const isActive = activeCategory === category.id;
           return (
@@ -23,13 +24,13 @@ export function CategoryTabs({ activeCategory, onCategoryChange }: CategoryTabsP
               key={category.id}
               onClick={() => onCategoryChange(category.id)}
               className={`
-                minecraft-btn px-4 py-3 flex flex-col items-center gap-2 min-w-[100px]
+                minecraft-btn px-3 py-2 flex flex-col items-center gap-1 min-w-[80px]
                 ${isActive ? 'category-tab-active' : ''}
               `}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <div className="w-12 h-12 relative">
+              <div className="w-10 h-10 relative">
                 <img
                   src={category.icon}
                   alt={category.name}
@@ -46,7 +47,7 @@ export function CategoryTabs({ activeCategory, onCategoryChange }: CategoryTabsP
                 )}
               </div>
               <span className={`
-                font-pixel text-xs whitespace-nowrap
+                font-pixel text-[10px] whitespace-nowrap
                 ${isActive ? 'text-white' : 'text-gray-300'}
               `}>
                 {category.name}

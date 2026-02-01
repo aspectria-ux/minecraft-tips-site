@@ -13,6 +13,7 @@ import { CategoryTabs } from '@/components/CategoryTabs';
 import { CommandCard } from '@/components/CommandCard';
 import { PlatformSwitch } from '@/components/PlatformSwitch';
 import { Footer } from '@/components/Footer';
+import { AffiliateSection, AffiliateBanner } from '@/components/AffiliateSection';
 import { 
   loadCommandsData,
   getCommandsByCategory, 
@@ -206,6 +207,12 @@ export default function Home() {
             </p>
           </div>
         )}
+
+        {/* アフィリエイトバナー（コマンド一覧の後） */}
+        <AffiliateBanner />
+
+        {/* アフィリエイトセクション（フル表示） */}
+        <AffiliateSection variant="full" />
       </main>
 
       {/* フッター */}

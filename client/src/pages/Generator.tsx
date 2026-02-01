@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { toast } from 'sonner';
 import { Footer } from '@/components/Footer';
+import { AffiliateSection } from '@/components/AffiliateSection';
 
 type GeneratorType = 'teleport' | 'give' | 'summon' | 'fill' | 'effect' | 'enchant';
 
@@ -596,6 +597,9 @@ export default function Generator() {
             コピーボタンを押して、マイクラのチャット画面に貼り付けてね！
           </p>
         </div>
+
+        {/* アフィリエイトセクション */}
+        <AffiliateSection variant="full" />
       </main>
 
       {/* フッター */}

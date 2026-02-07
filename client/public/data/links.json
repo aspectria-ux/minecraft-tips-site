@@ -1,0 +1,51 @@
+{
+  "affiliate_links": {
+    "rental_servers": [
+      {
+        "id": "conoha_game",
+        "name": "ConoHa for GAME",
+        "description": "マイクラ専用レンタルサーバー。簡単セットアップで初心者向け",
+        "url": "https://example.com/conoha",
+        "icon": "🎮"
+      },
+      {
+        "id": "xserver_vps",
+        "name": "Xserver VPS",
+        "description": "高性能VPSでマイクラサーバーを運営。カスタマイズ自由",
+        "url": "https://example.com/xserver",
+        "icon": "⚡"
+      },
+      {
+        "id": "sakura_vps",
+        "name": "さくらのVPS",
+        "description": "安定したマイクラサーバーホスティング。24時間サポート",
+        "url": "https://example.com/sakura",
+        "icon": "🌸"
+      }
+    ],
+    "peripherals": [
+      {
+        "id": "gaming_mouse",
+        "name": "ゲーミングマウス",
+        "description": "高精度で快適なマイクラプレイ体験",
+        "url": "https://example.com/mouse",
+        "icon": "🖱️"
+      },
+      {
+        "id": "headset",
+        "name": "ゲーミングヘッドセット",
+        "description": "クリアな音声でマルチプレイを楽しもう",
+        "url": "https://example.com/headset",
+        "icon": "🎧"
+      },
+      {
+        "id": "monitor",
+        "name": "ゲーミングモニター",
+        "description": "高速リフレッシュレートで快適なプレイ",
+        "url": "https://example.com/monitor",
+        "icon": "🖥️"
+      }
+    ]
+  },
+  "notes": "各URLを実際のアフィリエイトリンクに置き換えてください。プレースホルダーはhttps://example.com/xxxです。"
+}
